@@ -1,12 +1,13 @@
 package main
+
 import "fmt"
 
-func main(){
+func main() {
 	// constant isinya tidak dapat diubah
 	// berbeda dengan variable, constant tidak akan error meskipun tidak digunakan
 	const (
 		firstName = "Sahril"
-		lastName = "Mahendra"
+		lastName  = "Mahendra"
 	)
 
 	fmt.Println(firstName)
