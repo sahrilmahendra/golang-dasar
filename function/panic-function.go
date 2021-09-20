@@ -3,10 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	runApp(true)
+	runApp(false)
 }
 func endApp() {
 	fmt.Println("Aplikasi selesai")
+	// recover = menangkap nilai panic jika function panic terjadi
+	pesan := recover()
+	if pesan != nil {
+		fmt.Println("Error :", pesan)
+	}
 }
 
 func runApp(error bool) {
